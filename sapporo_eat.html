@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>札幌エリア - 食べたい</title>
+  <style>
+    /* （※CSS部分は先生が作成されたものと全く同じです） */
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.8; letter-spacing: 0.05em; }
+    header { padding: 20px; border-bottom: 1px solid #eeeeee; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { color: #888888; text-decoration: none; font-size: 0.85em; }
+    .back-btn:hover { color: #333333; }
+    h1 { margin: 0; font-size: 1.1em; font-weight: 500; flex-grow: 1; text-align: right; }
+    .container { padding: 30px 20px; max-width: 600px; margin: auto; }
+    .intro { margin-bottom: 40px; }
+    .intro p { font-size: 0.9em; color: #555555; }
+    .nav-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .nav-btn { color: #555555; text-decoration: none; padding: 8px 16px; font-size: 0.85em; border: 1px solid #dddddd; transition: all 0.3s ease; }
+    .nav-btn:hover { border-color: #333333; color: #333333; }
+    .spot-section { margin-bottom: 60px; padding-top: 20px; border-top: 1px solid #eeeeee; }
+    .spot-header { margin-bottom: 15px; }
+    .spot-section h2 { margin: 0; font-size: 1.2em; font-weight: 500; }
+    .spot-links { font-size: 0.9em; margin-bottom: 10px; }
+    .spot-links a { color: #4682b4; text-decoration: none; border-bottom: 1px solid #4682b4; display: inline-block; }
+    .spot-links a:hover { color: #333333; border-color: #333333; }
+    .spot-desc { font-size: 0.9em; color: #444444; }
+    .note { padding: 15px 20px; background-color: #f5f5f5; border: 1px solid #eeeeee; border-radius: 4px; font-size: 0.75em; color: #666666; line-height: 1.6; margin-top: 0; }
+    
+    .spot-img-main { width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 10px; }
+    .img-caption-main { text-align: center; font-size: 0.9em; margin-top: 0; margin-bottom: 0; }
+    
+    .to-top { display: block; text-align: right; margin-top: 20px; color: #888888; text-decoration: none; font-size: 0.85em; }
+    .to-top:hover { color: #333333; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">BACK</a>
+    <h1>SAPPORO - 食べたい</h1>
+  </header>
+  
+  <div class="container" id="top">
+    <div class="intro">
+      <p>ここに紹介する所以外にもいい所はきっとあるので自分で調べると良い。<br>
+      <span style="font-size:0.85em;">（※ 値段や店舗情報はもしかしたら間違ってるかもだから自分でちゃんと調べてね）</span></p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="#curry" class="nav-btn">スープカレー</a>
+      <a href="#ramen" class="nav-btn">ラーメン</a>
+    </div>
+
+    <!-- スープカレー -->
+    <div class="spot-section" id="curry">
+      <div class="spot-header">
+        <h2>スープカレー（個人的な見解）</h2>
+      </div>
+      
+      <div class="spot-desc">
+        <p style="margin-bottom: 20px;">北海道のスープカレーは SAMURAI、SAMA、RAMAI の3強を押さえておけばいいと思ってます。（人によってはココに GARAKUが入る）<br>
+        SAMURAI は実は名古屋にも店舗があるので、せっかくなら SAMA か RAMAI かなって感じ。僕の個人的な好みだとSAMA。</p>
+        
+        <ul style="padding-left: 20px; margin-bottom: 20px;">
+          <li><strong>SAMURAI：</strong>野菜の甘味とドロドロ系スープ。</li>
+          <li><strong>SAMA：</strong>パンチの効いたトマトの酸味とスパイスのキレが中毒になる。</li>
+          <li><strong>RAMAI：</strong>結構優しい味で少し甘め。実家のような安心感。</li>
+        </ul>
+        
+        <p style="font-weight: bold; margin-bottom: 30px;">1つ覚えておいて欲しい。スープカレーを食べるなら、揚げブロッコリーのトッピングはマスト。まじで。</p>
+
+        <!-- 店舗1: SAMURAI -->
+        <div style="margin-bottom: 40px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0101/A010102/1077332/" target="_blank">SAMURAI すすきの店</a>
+          </div>
+          <div class="note">
+            <img src="samurai02.jpeg" class="spot-img-main">
+            <p class="img-caption-main">SAMURAIは王道って感じ。野菜の甘味を楽しむなら◎</p>
+          </div>
+        </div>
+
+        <!-- 店舗2: SAMA -->
+        <div style="margin-bottom: 40px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0101/A010103/1077107/" target="_blank">SAMA 札幌大通店</a>
+          </div>
+          <div class="note">
+            <img src="sama.jpg" class="spot-img-main">
+            <p class="img-caption-main">刺激的な味で中毒性あるのがSAMA。僕はここがイチオシ。</p>
+          </div>
+        </div>
+
+        <!-- 店舗3: RAMAI -->
+        <div style="margin-bottom: 10px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0101/A010102/1029827/" target="_blank">RAMAI 札幌中央店</a>
+          </div>
+          <div class="note">
+            <img src="ramai.jpg" class="spot-img-main">
+            <p class="img-caption-main">RAMAIは優しくてボリュームもある。ライスも特徴的。</p>
+          </div>
+        </div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- ラーメン -->
+    <div class="spot-section" id="ramen">
+      <div class="spot-header">
+        <h2>ラーメン（個人的な見解）</h2>
+      </div>
+      
+      <div class="spot-desc">
+        <p style="margin-bottom: 30px;">札幌のラーメンと言えば味噌。味噌ラーメンといえば“すみれ”以外の選択肢なし。<br>
+        すみれで修業を積んだ店主がやっているお店の“彩未“、彩未で修業を積んだ店主がやっている”美椿“というお店があるけど札幌からはちょっと遠い。<br>
+        そして札幌駅すぐにはこのすみれの系譜を持つラーメン店がない！<br>
+        なのですすきのまで行けば3店舗ほどあるのでこの3店舗を候補にしてみたらどうかと思うわけです。<br>
+        もちろんそれ以外にもおいしい所はたくさんあると思うので調べてみてお好みで行くといいと思う。</p>
+
+        <!-- 店舗1: すみれ -->
+        <div style="margin-bottom: 40px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0101/A010103/1009050/" target="_blank">すみれ 札幌すすきの店</a>
+          </div>
+          <div class="note">
+            <img src="sumire.jpeg" class="spot-img-main">
+            <p class="img-caption-main">味噌と言えばすみれ。まあ間違いはない。</p>
+          </div>
+        </div>
+
+        <!-- 店舗2: 千寿 -->
+        <div style="margin-bottom: 40px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0101/A010102/1000011/" target="_blank">らぁめん 千寿</a>
+          </div>
+          <div class="note">
+            <img src="senjyu.jpeg" class="spot-img-main">
+            <p class="img-caption-main">すみれ系譜</p>
+          </div>
+        </div>
+
+        <!-- 店舗3: 空 -->
+        <div style="margin-bottom: 10px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0101/A010102/1084230/" target="_blank">らーめん空 ノルベサ店</a>
+          </div>
+          <div class="note">
+            <img src="sora.jpeg" class="spot-img-main">
+            <p class="img-caption-main">空は実は新千歳空港にもあるのでそこで食べてもいいかもしれない。</p>
+          </div>
+        </div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+  </div>
+</body>
+</html>
