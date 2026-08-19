@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>札幌エリア - 行きたい</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+    }
+    header {
+      padding: 20px;
+      border-bottom: 1px solid #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .back-btn {
+      color: #888888;
+      text-decoration: none;
+      font-size: 0.85em;
+    }
+    .back-btn:hover {
+      color: #333333;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.1em;
+      font-weight: 500;
+      flex-grow: 1;
+      text-align: right;
+    }
+    .container {
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    .intro p {
+      font-size: 0.9em;
+      color: #555555;
+    }
+    h3 {
+      font-size: 1em;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .nav-btn {
+      color: #555555;
+      text-decoration: none;
+      padding: 8px 16px;
+      font-size: 0.85em;
+      border: 1px solid #dddddd;
+      transition: all 0.3s ease;
+    }
+    .nav-btn:hover {
+      border-color: #333333;
+      color: #333333;
+    }
+    .spot-section {
+      margin-bottom: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #eeeeee;
+    }
+    .spot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 15px;
+    }
+    .spot-section h2 {
+      margin: 0;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+    .price {
+      font-size: 0.85em;
+      color: #888888;
+    }
+    .spot-links {
+      margin-bottom: 20px;
+      font-size: 0.85em;
+    }
+    .spot-links a {
+      color: #333333;
+      text-decoration: none;
+      border-bottom: 1px solid #333333;
+      margin-right: 15px;
+      padding-bottom: 2px;
+    }
+    .spot-links a:hover {
+      color: #888888;
+      border-color: #888888;
+    }
+    .spot-desc {
+      font-size: 0.9em;
+      color: #444444;
+    }
+  .note {
+      margin-top: 20px;
+      padding: 15px 20px;
+      background-color: #f5f5f5; /* しっかりと違いがわかるライトグレーに変更しました */
+      border: 1px solid #eeeeee;
+      border-radius: 4px;        /* 角を少し丸くして柔らかい印象に */
+      font-size: 0.75em;
+      color: #666666;
+      line-height: 1.6;
+    }
+    
+    /* --- 画像レイアウト用の設定 --- */
+    .spot-img-main {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 4px;
+      display: block;
+    }
+    /* note部分などの小さい画像用（50%にして中央寄せ） */
+    .spot-img-sub {
+      max-width: 50%; /* ここを30%から50%に変更しました */
+      height: auto;
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+    }
+    .img-caption-main {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 0.9em;
+    }
+    .img-caption-sub {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      display: block;
+    }
+    .img-caption-sub:last-child {
+      margin-bottom: 0;
+    }
+    /* ----------------------------- */
+
+    .to-top {
+      display: block;
+      text-align: right;
+      margin-top: 20px;
+      color: #888888;
+      text-decoration: none;
+      font-size: 0.85em;
+    }
+    .to-top:hover {
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">BACK</a>
+    <h1>SAPPORO - 行きたい</h1>
+  </header>
+  
+  <div class="container" id="top">
+    <!-- エリア説明 -->
+    <div class="intro">
+      <p>ここに紹介する所以外にもいい所はきっとあるので自分で調べると良い。<br>
+      <span style="font-size:0.85em;">（※ 値段はもしかしたら間違ってるかもだから自分でちゃんと調べてね）</span></p>
+      
+      <h3>札幌駅周辺について</h3>
+      <p>北海道札幌の拠点となる「札幌駅（サツエキ）」。<br>
+      駅ビルには、流行のファッションや絶品グルメ、そしてお土産まで、欲しいもはだいたい揃う。名古屋でいえば名古屋駅（メイエキ）かなって感じ。<br>
+      駅の南口からは、美しいレンガ造りの「北海道庁旧本庁舎（赤れんが庁舎）」や、札幌のシンボル「時計台」など、歴史を感じるフォトスポットが徒歩圏内に点在。<br>
+      広大な「大通公園」までは、地下歩行空間（チカホ）を通って移動してみるといいかも。</p>
+      <p>食べたい。行きたい。を調べておいて、北海道の開拓の歴史に触れるもよし。ラーメンやスープカレー、ジンギスカンやスイーツを求めてふらふらと散策するもよし。<br>
+      通ぶってサツエキって呼べる位まで散策してみるといいと思います。</p>
+    </div>
+
+    <!-- ページ内リンクボタン -->
+    <div class="nav-buttons">
+      <a href="#shiroi" class="nav-btn">白い恋人パーク</a>
+      <a href="#sapporobeer" class="nav-btn">サッポロビール博物館</a>
+      <a href="#tokeidai" class="nav-btn">札幌市時計台</a>
+      <a href="#tanukikoji" class="nav-btn">狸小路商店街</a>
+      <a href="#secoma" class="nav-btn">セイコーマート</a>
+      <a href="#moiwa" class="nav-btn">藻岩山</a>
+    </div>
+
+    <!-- 白い恋人パーク -->
+    <div class="spot-section" id="shiroi">
+      <div class="spot-header">
+        <h2>白い恋人パーク</h2>
+        <span class="price">有料エリア 1200円</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/QW8p1wG1gfW2hS137" target="_blank">MAP</a>
+        <a href="https://www.shiroikoibitopark.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>北海道銘菓「白い恋人」で知られる石屋製菓のお菓子のテーマパーク。<br>
+        工場見学やスイーツ作り体験、バラが咲く中庭の散策、限定スイーツを楽しめる。<br>
+        札幌駅からちょっと遠いので、何人かで割り勘してタクシーで行くのがイイかも。僕は割と楽しめたけど、しょぼいと感じる人もいると思う。</p>
+        
+        <img src="sirokoi01.jpg" class="spot-img-main">
+        <p class="img-caption-main">真ん中のハート型の穴から顔が出せる。顔ハメ記念写真が好きな人はやるといい。</p>
+      </div>
+      
+      <div class="note">
+        <img src="sirokoi02.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（プロジェクションマッピングシアターって感じの作りでチョコレートの歴史を教えてくれる。）</div>
+        
+        <img src="sirokoi03.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（猫耳がついた作業帽子を着た人たちが白い恋人を作っている。工場見学。）</div>
+        
+        <img src="sirokoi04.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（入場チケットのQRコードで白い恋人がもらえる。）</div>
+        
+        <img src="sirokoi05.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（お菓子作り体験ができる。30分～１時間程度らしい。ちょっと時間足りなくなるかも？）</div>
+        
+        <img src="sirokoi06.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（これはガチ。絶対食べた方がいい。）</div>
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- サッポロビール博物館 -->
+    <div class="spot-section" id="sapporobeer">
+      <div class="spot-header">
+        <h2>サッポロビール博物館</h2>
+        <span class="price">大人1000円 中高生500円</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/ibMcoWmn2wGmwAzM6" target="_blank">MAP</a>
+        <a href="https://www.sapporobeer.jp/brewery/s_museum/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>1876年の北海道開拓事業から続く日本で最も歴史のあるビールに関する博物館。ここは札幌駅から２キロくらい。徒歩でもがんばれば行ける距離。札幌駅からバスも出てるっぽい。<br>
+        北海道遺産のレンガ造りの建物で、ビールの歴史を学べるほか、ここでしか飲めない復刻ビールの試飲や隣接するビール園を楽しめる。（高校生はビール飲んだらダメなんだけど、ジンギスカンは食べてもいいね）</p>
+        
+        <img src="biru01.jpg" class="spot-img-main">
+        <p class="img-caption-main">やっぱ昔の建物といえば赤レンガだよなあ。</p>
+      </div>
+      
+      <div class="note">
+        <img src="biru02.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（中のレストランでジンギスカンも食べれる。ランチならお得かな。）</div>
+        
+        <img src="biru03.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（ビール作る時になんか煮たりするやつ。）</div>
+        
+        <img src="biru04.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（サッポロビールの歴史を学ぶやつ。）</div>
+        
+        <img src="biru05.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（大事なビール運んでる時にビールぶちまけたごめん。っていう報告書。）</div>
+        
+        <img src="biru06.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（昔のポスター。）</div>
+        
+        <img src="biru07.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（さっぽろビールと言えばこれだよね。）</div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 札幌市時計台 -->
+    <div class="spot-section" id="tokeidai">
+      <div class="spot-header">
+        <h2>札幌市時計台</h2>
+        <span class="price">350円 高校生以下無料</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/ZahE9uAycRv2TAJh9" target="_blank">MAP</a>
+        <a href="https://sapporoshi-tokeidai.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>1878年にクラーク博士の構想で建設された日本最古の塔時計を持つ重要文化財。<br>
+        内部は歴史を学べる資料館になってる。ここは完全に札幌駅からの徒歩圏内。</p>
+        
+        <img src="tokei01.jpg" class="spot-img-main">
+      </div>
+      
+      <div class="note">
+        〇 遠くに行くより、近場でお金かけずに観光したい<br>
+        〇 狸小路商店街をふらふらするついでに<br>
+        〇 札幌テレビ塔を見に行く途中に<br>
+        〇 すすきのを散歩したいから通り道に<br>
+        という人におすすめ。ただ、マジで小さいから立ち寄り程度って感じ。
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 狸小路商店街 -->
+    <div class="spot-section" id="tanukikoji">
+      <div class="spot-header">
+        <h2>狸小路商店街</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/M5HQ4E8VMnTewEqv9" target="_blank">MAP</a>
+        <a href="https://tanukikoji.or.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>札幌の商店街。小樽にも「小樽堺町通り商店街」っていうのがある。小樽の方は観光客用の商店街って感じ。札幌のは名古屋でいう大須みたいな雰囲気。</p>
+        
+        <img src="tanuki01.jpg" class="spot-img-main">
+      </div>
+      <div class="note">
+        札幌 狸小路商店街 ➡ 大須商店街っぽい（ディープな大須は除く）<br>
+        小樽 境町通り商店街 ➡ すげー長い金シャチ横丁って感じ
+      </div>
+      <p class="spot-desc">というイメージ。商店街歩くのが好きな人は良い。</p>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- セイコーマート -->
+    <div class="spot-section" id="secoma">
+      <div class="spot-header">
+        <h2>セイコーマート</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://www.seicomart.co.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>セイコーマート。略してセコマ。<br>
+        北海道のご当地コンビニ。一応、埼玉や茨城にもあるんだけど、基本的に北海道から外に進出しない。自社工場での製造や独自の物流ルートを築いて安さと品質を保ち続ける経営戦略スタイルのコンビニ。北海道ではファミマよりセコマ。セブンよりセコマである。</p>
+        <p>店内に必ずあるホットシェフはホットスナックや弁当を作って売る所。結構うまい。<br>
+        どこにでもあるので、コンビニ行こうと思った時にでも行ってみるといい。</p>
+        
+        <img src="sekoma01.jpg" class="spot-img-main">
+      </div>
+      <div class="note">
+        <img src="sekoma02.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（セコマTシャツがね、結構イケてる。）</div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 藻岩山 -->
+    <div class="spot-section" id="moiwa">
+      <div class="spot-header">
+        <h2>藻岩山</h2>
+        <span class="price">2100円</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/YdXDE5gCkCLSuC8c8" target="_blank">MAP</a>
+        <a href="https://mt-moiwa.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>藻岩山の標高は531m。山頂展望台からは札幌の街並みが一望できる。<br>
+        山頂展望台からの夜景は「日本新三大夜景」に認定されており、ロープウェイとミニケーブルカーを乗り継いでいく。（一応登山ルートもある。昼間に行って１日山で過ごす覚悟があれば徒歩で登って、降りてもいいかもしれない。）</p>
+        
+        <img src="moiwa01.jpeg" class="spot-img-main">
+      </div>
+      
+      <div class="note">
+        <img src="moiwa02.jpeg" class="spot-img-sub">
+        <div class="img-caption-sub">（山頂の展望台はなんか洒落てる。）</div>
+        
+        <img src="moiwa03.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（夏でも肌寒い。天気が良ければ空も綺麗らしい。）</div>
+        
+        <img src="moiwa04.jpeg" class="spot-img-sub">
+        <div class="img-caption-sub">（藻岩山のお土産Tシャツは割といいセンスしてる。）</div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+  </div>
+</body>
+</html>
