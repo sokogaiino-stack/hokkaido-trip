@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小樽エリア - 食べたい</title>
+  <style>
+    /* CSSは札幌編と共通です */
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.8; letter-spacing: 0.05em; }
+    header { padding: 20px; border-bottom: 1px solid #eeeeee; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { color: #888888; text-decoration: none; font-size: 0.85em; }
+    .back-btn:hover { color: #333333; }
+    h1 { margin: 0; font-size: 1.1em; font-weight: 500; flex-grow: 1; text-align: right; }
+    .container { padding: 30px 20px; max-width: 600px; margin: auto; }
+    .intro { margin-bottom: 40px; }
+    .intro p { font-size: 0.9em; color: #555555; }
+    .nav-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .nav-btn { color: #555555; text-decoration: none; padding: 8px 16px; font-size: 0.85em; border: 1px solid #dddddd; transition: all 0.3s ease; }
+    .nav-btn:hover { border-color: #333333; color: #333333; }
+    .spot-section { margin-bottom: 60px; padding-top: 20px; border-top: 1px solid #eeeeee; }
+    .spot-header { margin-bottom: 15px; }
+    .spot-section h2 { margin: 0; font-size: 1.2em; font-weight: 500; }
+    .spot-links { font-size: 0.9em; margin-bottom: 10px; }
+    .spot-links a { color: #4682b4; text-decoration: none; border-bottom: 1px solid #4682b4; display: inline-block; }
+    .spot-links a:hover { color: #333333; border-color: #333333; }
+    .spot-desc { font-size: 0.9em; color: #444444; }
+    .note { padding: 15px 20px; background-color: #f5f5f5; border: 1px solid #eeeeee; border-radius: 4px; font-size: 0.75em; color: #666666; line-height: 1.6; margin-top: 0; }
+    
+    .spot-img-main { width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 10px; }
+    .img-caption-main { text-align: center; font-size: 0.9em; margin-top: 0; margin-bottom: 0; }
+    
+    .to-top { display: block; text-align: right; margin-top: 20px; color: #888888; text-decoration: none; font-size: 0.85em; }
+    .to-top:hover { color: #333333; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">BACK</a>
+    <h1>OTARU - 食べたい</h1>
+  </header>
+  
+  <div class="container" id="top">
+    <div class="intro">
+      <p>ここに紹介する所以外にもいい所はきっとあるので自分で調べると良い。<br>
+      <span style="font-size:0.85em;">（※ 値段や店舗情報はもしかしたら間違ってるかもだから自分でちゃんと調べてね）</span></p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="#kaisen" class="nav-btn">海鮮</a>
+      <a href="#sweets" class="nav-btn">スイーツ</a>
+      <a href="#kamaei" class="nav-btn">かま栄</a>
+    </div>
+
+    <!-- 海鮮 -->
+    <div class="spot-section" id="kaisen">
+      <div class="spot-header">
+        <h2>海鮮（個人的な見解）</h2>
+      </div>
+      
+      <div class="spot-desc">
+        <p style="margin-bottom: 30px;">小樽で海鮮を食べるなら三角市場か、堺町通り商店街になると思う。<br>
+        ただ、観光地なのでやっぱり価格は観光地価格。正直結構お高い。「愛知でも柳橋市場とか、知多とか行きゃ食えるくね？」と思っちゃう人にはお勧めできない。<br>
+        でも、“北海道で海鮮を食べた”という経験になら僕は少し高めでも払う価値はあるんじゃないかなと思うのです。<br>
+        食べたいけど、そんなにたくさん食べられないよ！ってひとは堺町通り商店街に行くと、ひとくち海鮮みたいなのもあるのでそこでひとくちだけ楽しむっていう楽しみ方もいいかと思う。</p>
+
+        <!-- 店舗1: 小樽市場食堂 -->
+        <div style="margin-bottom: 40px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0106/A010601/1069268/" target="_blank">小樽市場食堂（海鮮丼を比較的コスパ良く）</a>
+          </div>
+          <div class="note">
+            <img src="kaisen.jpg" class="spot-img-main">
+            <p class="img-caption-main">イクラ丼と、特選海鮮丼。いいか、マジな話をしてやろう。特選じゃない方の海鮮丼の方が絶対にイイ。行けばわかる。絶対に普通の海鮮丼にするんだ。</p>
+          </div>
+        </div>
+
+        <!-- 店舗2: あか・あお・きいろ -->
+        <div style="margin-bottom: 10px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0106/A010601/1073033/dtlrvwlst/?type=0" target="_blank">あか・あお・きいろ</a>
+          </div>
+          <div class="note">
+            <img src="hitokuti.jpg" class="spot-img-main">
+            <p class="img-caption-main">ひとくち丼で手軽に海鮮を楽しむならアリ</p>
+          </div>
+        </div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- スイーツ -->
+    <div class="spot-section" id="sweets">
+      <div class="spot-header">
+        <h2>スイーツ（個人的な見解）</h2>
+      </div>
+      
+      <div class="spot-desc">
+        <p style="margin-bottom: 10px;">北海道のスイーツはもう多すぎて手に負えない。だって、牛乳のソフトクリーム、チョコレート、小豆、メロンとか、洋菓子もいい。「お土産」という視点なら別。洋菓子なら LeTAO（ルタオ）かな。和菓子なら柳月も食べたいな。とかはあるけどもういっそ食べ歩きで楽しむならもう手あたり次第食べた方がイイ。だから省略。</p>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- かま栄 -->
+    <div class="spot-section" id="kamaei">
+      <div class="spot-header">
+        <h2>かま栄（個人的な見解）</h2>
+      </div>
+      
+      <div class="spot-desc">
+        <p style="margin-bottom: 30px;">新千歳空港でも食べられるのだけど、割と徒歩圏内に工場直売店があるのでせっかくなら立ち寄ってもイイかも。</p>
+
+        <!-- 店舗1: かま栄 -->
+        <div style="margin-bottom: 10px;">
+          <div class="spot-links">
+            <a href="https://tabelog.com/hokkaido/A0106/A010601/1013969/" target="_blank">かま栄（かまぼこは食っといてもイイ）</a>
+          </div>
+          <div class="note">
+            <img src="kamaei02.jpeg" class="spot-img-main">
+            <p class="img-caption-main">小樽にはかま栄の工場直売店があるので、そこでこのパンロールは食べてみてもいいかもしれない。今まで食べた事ない初めての体験がそこにあるよ。</p>
+          </div>
+        </div>
+      </div>
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+  </div>
+</body>
+</html>
+</html>
