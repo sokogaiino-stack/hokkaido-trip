@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小樽エリア - 行きたい</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+    }
+    header {
+      padding: 20px;
+      border-bottom: 1px solid #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .back-btn {
+      color: #888888;
+      text-decoration: none;
+      font-size: 0.85em;
+    }
+    .back-btn:hover {
+      color: #333333;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.1em;
+      font-weight: 500;
+      flex-grow: 1;
+      text-align: right;
+    }
+    .container {
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    .intro p {
+      font-size: 0.9em;
+      color: #555555;
+    }
+    h3 {
+      font-size: 1em;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .nav-btn {
+      color: #555555;
+      text-decoration: none;
+      padding: 8px 16px;
+      font-size: 0.85em;
+      border: 1px solid #dddddd;
+      transition: all 0.3s ease;
+    }
+    .nav-btn:hover {
+      border-color: #333333;
+      color: #333333;
+    }
+    .spot-section {
+      margin-bottom: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #eeeeee;
+    }
+    .spot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 15px;
+    }
+    .spot-section h2 {
+      margin: 0;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+    .price {
+      font-size: 0.85em;
+      color: #888888;
+    }
+    .spot-links {
+      margin-bottom: 20px;
+      font-size: 0.85em;
+    }
+    .spot-links a {
+      color: #333333;
+      text-decoration: none;
+      border-bottom: 1px solid #333333;
+      margin-right: 15px;
+      padding-bottom: 2px;
+    }
+    .spot-links a:hover {
+      color: #888888;
+      border-color: #888888;
+    }
+    .spot-desc {
+      font-size: 0.9em;
+      color: #444444;
+    }
+    .note {
+      margin-top: 20px;
+      padding: 15px 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      font-size: 0.75em;
+      color: #666666;
+      line-height: 1.6;
+    }
+    
+    /* --- 画像レイアウト用の設定 --- */
+    .spot-img-main {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 4px;
+      display: block;
+    }
+    .spot-img-sub {
+      max-width: 50%;
+      height: auto;
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+    }
+    .img-caption-main {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 0.9em;
+    }
+    .img-caption-sub {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      display: block;
+    }
+    .img-caption-sub:last-child {
+      margin-bottom: 0;
+    }
+    /* ----------------------------- */
+
+    .to-top {
+      display: block;
+      text-align: right;
+      margin-top: 20px;
+      color: #888888;
+      text-decoration: none;
+      font-size: 0.85em;
+    }
+    .to-top:hover {
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">BACK</a>
+    <h1>OTARU - 行きたい</h1>
+  </header>
+  
+  <div class="container" id="top">
+    <!-- エリア説明 -->
+    <div class="intro">
+      <p>札幌から電車で約40分。近代的な札幌駅と違い、小樽駅はレトロな風景が広がる。<br>
+      かつて「北のウォール街」と呼ばれたほど大繁栄した小樽。新しい1万円札の顔であり、500の会社を設立したと言われる渋沢栄一も、この街の経済発展に大きく関わった歴史を持っている。<br>
+      彼らが活躍した時代に建てられた重厚な石造りの銀行や倉庫群は、現在もそのまま残されており、観光に来たなあって感じで歴史を感じる映えスポット。<br>
+      歴史ある運河をクルーズしたり、海鮮やスイーツを楽しんだり、ガラス細工やオルゴールのお店を見て回るのも結構楽しい。美術館が5つも密集する場所があるのでそこに行ってみるのもいいかもしれない。<br>
+      食べて良し、歩いて良しの観光地は時間が足りないくらい予定を詰め込んでいいと思う</p>
+      
+      <p style="margin-top: 30px;">ここに紹介する所以外にもいい所はきっとあるので自分で調べると良い。<br>
+      <span style="font-size:0.85em;">（※ 値段はもしかしたら間違ってるかもだから自分でちゃんと調べてね）</span></p>
+    </div>
+
+    <!-- ページ内リンクボタン -->
+    <div class="nav-buttons">
+      <a href="#temiya" class="nav-btn">旧国鉄手宮線</a>
+      <a href="#sankaku" class="nav-btn">小樽三角市場</a>
+      <a href="#unga" class="nav-btn">小樽運河クルーズ</a>
+      <a href="#kinyu" class="nav-btn">金融資料館</a>
+      <a href="#art" class="nav-btn">小樽芸術村</a>
+      <a href="#sakaimachi" class="nav-btn">堺町通り商店街</a>
+      <a href="#orgel" class="nav-btn">オルゴール堂本店</a>
+    </div>
+
+    <!-- 旧国鉄手宮線オープンスペース -->
+    <div class="spot-section" id="temiya">
+      <div class="spot-header">
+        <h2>旧国鉄手宮線オープンスペース</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/FAQAvScbDLXHjm5W8" target="_blank">MAP</a>
+        <a href="https://www.city.otaru.lg.jp/docs/2020112000505/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>小樽駅から運河の方に向かうと途中にある北海道最古の鉄道廃線跡の散策路。<br>
+        小樽の歴史を感じながらテクテク歩いてスタンドバイミーごっこでもするといいと思う。無料で散歩できるスポット。</p>
+        
+        <img src="kokutetu.jpeg" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 小樽三角市場 -->
+    <div class="spot-section" id="sankaku">
+      <div class="spot-header">
+        <h2>小樽三角市場</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/ipX2pH1ZwRUbdW4w7" target="_blank">MAP</a>
+        <a href="https://otaru-sankaku.com/about.html" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>昭和23年頃に小樽駅前で7~8軒の露天商が営業したことから始まった小樽三角市場。JR小樽駅から徒歩1~2分なので駅からめっちゃ近い。<br>
+        全長約200メートル程度の坂道の通路に海鮮や食堂が並ぶ。ちょっとお金出してもいいから海鮮丼食べたいという人はココかなって感じ。</p>
+        
+        <img src="sankaku01.jpeg" class="spot-img-main">
+      </div>
+      
+      <div class="note">
+        <img src="sankaku02.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（中は結構狭い通路って感じになってる）</div>
+        
+        <img src="sankaku04.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（三角市場を抜けて最後にあるお店。ここが一番コスパ良さそう。）</div>
+        
+        <img src="sankaku05.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（まあ観光地だし、いい値段する。）</div>
+        
+        <img src="sankaku06.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（イクラ丼と、特選海鮮丼。いいか、マジな話をしてやろう。特選じゃない方の海鮮丼の方が絶対にイイ。行けばわかる。絶対に普通の海鮮丼にするんだ。）</div>
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 小樽運河クルーズ -->
+    <div class="spot-section" id="unga">
+      <div class="spot-header">
+        <h2>小樽運河クルーズ</h2>
+        <span class="price">1800円</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/PRoqyeXgqyucFZ7j8" target="_blank">MAP</a>
+        <a href="https://otaru.cc/about/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>小樽運河を船に乗って案内してくれる約40位の船の旅。これはマジでお勧めしたい。風が無くて天気が良ければ海に出るコースを取ってくれる。もう正直これだけでもいいって位の気持ち良さ。あとこの町の歴史の事を話してくれるんだけど、それだけで結構満足できる。<br>
+        真っ先に券売所に行って、乗りたい時間のチケットを買い、待ち時間で散歩するのがおすすめ。これはマスト。</p>
+        
+        <img src="unga01.jpeg" class="spot-img-main">
+      </div>
+      
+      <div class="note">
+        <img src="unga02.jpg" class="spot-img-sub">
+<div class="img-caption-sub">（気持ちよくて寝そうになる。）</div>
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 金融資料館 -->
+    <div class="spot-section" id="kinyu">
+      <div class="spot-header">
+        <h2>金融資料館</h2>
+        <span class="price">入館無料</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/LkXBd8RXrCVg9zPv9" target="_blank">MAP</a>
+        <a href="https://www3.boj.or.jp/otaru-m/index.html" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>日本銀行旧小樽支店金融資料館。無料の広報・展示施設。東京駅など手掛けた人が建てた歴史的建築物。日本銀行の業務や北のウォール街と呼ばれた小樽の発展の歴史、一億円の重さ体験などを紹介している。無料だし、堺町通り商店街に行く途中で寄れるのでよってもいいかも。</p>
+        
+        <img src="kinyu.jpeg" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 小樽芸術村 -->
+    <div class="spot-section" id="art">
+      <div class="spot-header">
+        <h2>小樽芸術村</h2>
+        <span class="price">ステンドグラス美術館 高校生 700円</span>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/QUQoDURhxLwgjDjx5" target="_blank">MAP</a>
+        <a href="https://www.nitorihd.co.jp/otaru-art-base/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>小樽市が経済都市として栄えた20世紀初頭の歴史的建造物を活用してなんと5つの美術館を隣接させた区画。それが小樽芸術村。この複合ミュージアムはあのニトリホールディングスが手掛けている。ステンドグラスや国内外の優れた美術・工芸品を展示し、歴史的空間と芸術が調和するスポット。さすがにお値段以上過ぎるだろ。<br>
+        全部は回れないと思うのでどれか1つ興味のあるものに行ってみるのがイイかも。周りを歩くだけでも割と楽しめる。でもやっぱ、小樽にきたならステンドグラスじゃね？</p>
+        
+        <img src="mura01.jpeg" class="spot-img-main">
+      </div>
+      
+      <div class="note">
+        <img src="mura02.jpg" class="spot-img-sub">
+        <img src="mura03.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（でかめの美術品って圧倒されて言葉失っちゃう感じがいいよね。）</div>
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- 小樽堺町通り商店街 -->
+    <div class="spot-section" id="sakaimachi">
+      <div class="spot-header">
+        <h2>小樽堺町通り商店街</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/aDXSBm1dUa7S3gRY8" target="_blank">MAP</a>
+        <a href="https://otaru-sakaimachi.com/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>小樽堺町通り商店街は小樽運河から徒歩約5分にある観光のメインストリート。<br>
+        約1.3kmの通りにレトロな歴史的建造物を活かした100軒以上の店が並び、ガラス細工、オルゴール、有名スイーツ、海鮮グルメを楽しめる。<br>
+        三角市場が混んでたら、いっそのことこっちで海鮮を楽しむのもあり。“一口海鮮”みたいなのもあったので、海鮮丼は流石に高すぎるけど少しだけ海鮮を楽しみたいって人はそれでもいいかも。<br>
+        この通りを抜けるとオルゴール堂があるので、そこを目指して歩いてもよし。</p>
+        
+        <img src="sakai.jpeg" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- オルゴール堂本店 -->
+    <div class="spot-section" id="orgel">
+      <div class="spot-header">
+        <h2>オルゴール堂本店</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://maps.app.goo.gl/zQSnB3d5QExJUxAY9" target="_blank">MAP</a>
+        <a href="https://www.otaru-orgel.co.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>国内最大級のオルゴール専門店。大正4(1915)年築の歴史的建造物を利用した館内には、40000点近いオルゴールが並ぶ。びっくりするくらいオルゴール。ここ以外でこんなにオルゴールを見ることは無いと思う。店の前には世界最大の蒸気時計が立つ。たまにポーって鳴って時間を知らせてくれる。<br>
+        堺町通り商店街を抜けたところにあるので、最後にココに寄ってタクシーで駅に帰る。とかがラクでいいかも。</p>
+        
+        <img src="orugoru01.jpeg" class="spot-img-main">
+      </div>
+      
+      <div class="note">
+        <img src="orugoru02.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（圧巻のオルゴールだらけ）</div>
+        
+        <img src="orugoru03.jpg" class="spot-img-sub">
+        <div class="img-caption-sub">（この玉手箱みたいなオルゴール。2200万だってさ。）</div>
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+  </div>
+</body>
+</html>
