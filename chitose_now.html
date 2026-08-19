@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新千歳空港 - 今食べたい</title>
+  <style>
+    /* これまでと共通のCSSです */
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.8; letter-spacing: 0.05em; }
+    header { padding: 20px; border-bottom: 1px solid #eeeeee; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { color: #888888; text-decoration: none; font-size: 0.85em; }
+    .back-btn:hover { color: #333333; }
+    h1 { margin: 0; font-size: 1.1em; font-weight: 500; flex-grow: 1; text-align: right; }
+    .container { padding: 30px 20px; max-width: 600px; margin: auto; }
+    .intro { margin-bottom: 40px; }
+    .intro p { font-size: 0.9em; color: #555555; }
+    .nav-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .nav-btn { color: #555555; text-decoration: none; padding: 8px 16px; font-size: 0.85em; border: 1px solid #dddddd; transition: all 0.3s ease; }
+    .nav-btn:hover { border-color: #333333; color: #333333; }
+    .spot-section { margin-bottom: 60px; padding-top: 20px; border-top: 1px solid #eeeeee; }
+    .spot-header { margin-bottom: 15px; }
+    .spot-section h2 { margin: 0; font-size: 1.2em; font-weight: 500; }
+    .spot-links { font-size: 0.9em; margin-bottom: 10px; }
+    .spot-links a { color: #4682b4; text-decoration: none; border-bottom: 1px solid #4682b4; display: inline-block; }
+    .spot-links a:hover { color: #333333; border-color: #333333; }
+    .spot-desc { font-size: 0.9em; color: #444444; }
+    .note { padding: 15px 20px; background-color: #f5f5f5; border: 1px solid #eeeeee; border-radius: 4px; font-size: 0.75em; color: #666666; line-height: 1.6; margin-top: 0; }
+    
+    .spot-img-main { width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 10px; margin-top: 20px; }
+    .img-caption-main { text-align: center; font-size: 0.9em; margin-top: 0; margin-bottom: 0; }
+    
+    .to-top { display: block; text-align: right; margin-top: 20px; color: #888888; text-decoration: none; font-size: 0.85em; }
+    .to-top:hover { color: #333333; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">BACK</a>
+    <h1>NEW CHITOSE AIRPORT - 今食べたい</h1>
+  </header>
+  
+  <div class="container" id="top">
+    <!-- エリア説明 -->
+    <div class="intro">
+      <p>ここに紹介するモノ以外にもいっぱいあるんだけど、僕のお気に入りだけを厳選して紹介。</p>
+    </div>
+
+    <!-- ページ内リンクボタン -->
+    <div class="nav-buttons">
+      <a href="#northman" class="nav-btn">生ノースマン</a>
+      <a href="#kamaei" class="nav-btn">かま栄のかまぼこ</a>
+    </div>
+
+    <!-- 生ノースマン -->
+    <div class="spot-section" id="northman">
+      <div class="spot-header">
+        <h2>生ノースマン（千秋庵）</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://senshuan.co.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>北海道の老舗菓子メーカー「札幌千秋庵」が販売する、和洋折衷スイーツ。<br>
+        1974年発売の定番銘菓「ノースマン」に、北海道産生乳を使った生クリームをたっぷりと加えて冷たくして食べるのが生ノースマン。<br>
+        たまに北海道展みたいなのをデパートでやるときに売ってることもあるけど、まあ北海道で食べたいよね。</p>
+        
+        <img src="nosu.jpg" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- かま栄のかまぼこ -->
+    <div class="spot-section" id="kamaei">
+      <div class="spot-header">
+        <h2>かま栄のかまぼこ（かま栄）</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://kamaei.co.jp/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>小樽に本社を構えるかまぼこのお店。難しい言葉を使うと、水産加工物製造業者。<br>
+        正直小樽の工場直売店で食べた方がいいけど、空港で手軽に済ませるのも1つの手。「かまぼこ」って聞いて微妙だなって思う人もいると思うけど、かま栄の“パンロール”ってやつ喰ってみ？飛ぶぞ。</p>
+        
+        <img src="panroru.jpg" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+  </div>
+</body>
+</html>

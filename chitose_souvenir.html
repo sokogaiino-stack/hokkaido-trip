@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新千歳空港 - お土産</title>
+  <style>
+    /* これまでと共通のCSSです */
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.8; letter-spacing: 0.05em; }
+    header { padding: 20px; border-bottom: 1px solid #eeeeee; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { color: #888888; text-decoration: none; font-size: 0.85em; }
+    .back-btn:hover { color: #333333; }
+    h1 { margin: 0; font-size: 1.1em; font-weight: 500; flex-grow: 1; text-align: right; }
+    .container { padding: 30px 20px; max-width: 600px; margin: auto; }
+    .intro { margin-bottom: 40px; }
+    .intro p { font-size: 0.9em; color: #555555; }
+    .nav-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .nav-btn { color: #555555; text-decoration: none; padding: 8px 16px; font-size: 0.85em; border: 1px solid #dddddd; transition: all 0.3s ease; }
+    .nav-btn:hover { border-color: #333333; color: #333333; }
+    .spot-section { margin-bottom: 60px; padding-top: 20px; border-top: 1px solid #eeeeee; }
+    .spot-header { margin-bottom: 15px; }
+    .spot-section h2 { margin: 0; font-size: 1.2em; font-weight: 500; }
+    .spot-links { font-size: 0.9em; margin-bottom: 10px; }
+    .spot-links a { color: #4682b4; text-decoration: none; border-bottom: 1px solid #4682b4; display: inline-block; }
+    .spot-links a:hover { color: #333333; border-color: #333333; }
+    .spot-desc { font-size: 0.9em; color: #444444; }
+    .note { padding: 15px 20px; background-color: #f5f5f5; border: 1px solid #eeeeee; border-radius: 4px; font-size: 0.75em; color: #666666; line-height: 1.6; margin-top: 0; }
+    
+    .spot-img-main { width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 10px; margin-top: 20px; }
+    .img-caption-main { text-align: center; font-size: 0.9em; margin-top: 0; margin-bottom: 0; }
+    
+    .to-top { display: block; text-align: right; margin-top: 20px; color: #888888; text-decoration: none; font-size: 0.85em; }
+    .to-top:hover { color: #333333; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">BACK</a>
+    <h1>NEW CHITOSE AIRPORT - お土産</h1>
+  </header>
+  
+  <div class="container" id="top">
+    <!-- エリア説明 -->
+    <div class="intro">
+      <p>ここに紹介するモノ以外にもいっぱいあるんだけど、僕のお気に入りだけを厳選して紹介。</p>
+    </div>
+
+    <!-- ページ内リンクボタン -->
+    <div class="nav-buttons">
+      <a href="#royce" class="nav-btn">Royce（ロイズ）</a>
+      <a href="#caramel" class="nav-btn">CARAMEL KITCHEN</a>
+    </div>
+
+    <!-- Royce（ロイズ） -->
+    <div class="spot-section" id="royce">
+      <div class="spot-header">
+        <h2>Royce（ロイズ）</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://www.royce.com/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>北海道を本社とするチョコレートメーカー。1983年に「北海道の地で本場・ヨーロッパに負けないチョコレートを作りたい」という想いのもと創業。現在では北海道各地に店舗を構え、チョコレートを中心とした洋菓子の商品を取り扱う。<br>
+        チョコレートと聞いて、「チョコ？ 明治と Godiva しか知らないっす！」って人は食べた方がいい。</p>
+        
+        <img src="roycechoko.jpg" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+    <!-- CARAMEL KITCHEN（キャラメルキッチン） -->
+    <div class="spot-section" id="caramel">
+      <div class="spot-header">
+        <h2>CARAMEL KITCHEN（キャラメルキッチン）</h2>
+      </div>
+      
+      <div class="spot-links">
+        <a href="https://www.glico.com/jp/shopservice/caramelkitchen/" target="_blank">WEBSITE</a>
+      </div>
+      
+      <div class="spot-desc">
+        <p>日本でここにしかない。ガチで1店舗のみの生キャラメルの店。<br>
+        Glico が北海道産の原料に拘って作る生キャラメルのお店。グリコが本気出して作る生キャラメルは1回食べておかないといけない。新千歳空港に来てこれを食べない人は今後大阪道頓堀のグリコ看板の写真を撮ってはいけないとすら思う。</p>
+        
+        <img src="caramerukichn.png" class="spot-img-main">
+      </div>
+      
+      <a href="#top" class="to-top">TOP</a>
+    </div>
+
+  </div>
+</body>
+</html>
